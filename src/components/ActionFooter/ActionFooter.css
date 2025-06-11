@@ -1,0 +1,84 @@
+.action-footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(30, 30, 30, 0.8);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border-color);
+    padding: 1rem;
+    z-index: 100;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-button,
+.continue-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.9rem 2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.back-button {
+    background-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.back-button:hover {
+    background-color: #444;
+}
+
+.continue-button {
+    background-color: var(--primary-green);
+    color: #121212;
+}
+
+.continue-button:hover {
+    background-color: var(--primary-green-hover);
+}
+
+.continue-button:disabled {
+    background-color: #444;
+    color: var(--text-secondary);
+    cursor: not-allowed;
+}
+
+.footer-selection-info {
+    color: var(--text-secondary);
+    font-weight: 500;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-selection-info strong {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        gap: 1rem;
+    }
+    .footer-selection-info {
+        display: none;
+    }
+    .back-button,
+    .continue-button {
+        flex: 1;
+        padding: 0.9rem 1rem;
+        text-align: center;
+    }
+}
