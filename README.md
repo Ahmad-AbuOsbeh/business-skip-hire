@@ -8,3 +8,10 @@
 - Divide the main page into four components (StatusBar, SkipCard, SkipSelector, ActionFooter).
 - Having the global styling and css variables into one common file `index.css` for the whole project.
 - Having each component custom style into its stand alone css file.
+
+## How to Run:
+
+- Clone the repo.
+- run `npm i`
+- run `npm dev`
+- check your localhost on the running port.
