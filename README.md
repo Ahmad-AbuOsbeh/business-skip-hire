@@ -13,5 +13,5 @@
 
 - Clone the repo.
 - run `npm i`
-- run `npm dev`
+- run `npm run dev`
 - check your localhost on the running port.
